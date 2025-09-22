@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "notion": {
+      "command": "node",
+      "args": ["/opt/homebrew/lib/node_modules/@notionhq/notion-mcp-server/bin/cli.mjs"],
+      "env": {
+        "NOTION_API_KEY": "${NOTION_API_KEY}"
+      }
+    },
+    "browser-tools": {
+      "command": "node",
+      "args": ["/Users/tylerbarnard/Developer/MCP/browser-tools-mcp/dist/mcp-server.js"],
+      "env": {}
+    }
+  }
+}

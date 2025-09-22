@@ -1,0 +1,60 @@
+# CLAUDE.md Template
+
+This file provides guidance to Claude Code when working with code in your repository.
+
+## Project Overview
+
+[Brief description of your project]
+
+## Core Technologies
+
+- [List main technologies, frameworks, and languages used]
+- [e.g., Next.js, React, TypeScript, etc.]
+
+## Project Structure
+
+```
+[Describe your project structure]
+```
+
+## Essential Commands
+
+### Development
+```bash
+# Start development server
+npm run dev
+
+# Run tests
+npm test
+
+# Build project
+npm run build
+```
+
+### Code Quality
+```bash
+# Run linting
+npm run lint
+
+# Type checking
+npm run typecheck
+
+# Format code
+npm run format
+```
+
+## Conventions & Guidelines
+
+### Code Style
+- [Describe coding conventions]
+- [Naming conventions]
+- [File organization patterns]
+
+### Best Practices
+- [Project-specific best practices]
+- [Security considerations]
+- [Performance guidelines]
+
+## Important Context
+
+[Any additional context Claude should know when working on this codebase]
