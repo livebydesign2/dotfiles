@@ -1,0 +1,135 @@
+# AeroSpace Configuration
+# Optimized for reducing mouse usage and hand strain
+
+# Start AeroSpace at login
+start-at-login = true
+
+# Automatically focus windows under mouse cursor
+on-focus-changed = ['move-mouse window-lazy-center']
+
+# Basic settings
+[gaps]
+# Gaps between windows (optional, set to 0 for no gaps)
+inner.horizontal = 8
+inner.vertical = 8
+outer.left = 8
+outer.bottom = 8
+outer.top = 8
+outer.right = 8
+
+# Main keyboard shortcuts
+[mode.main.binding]
+
+# Focus windows (cursor follows automatically)
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+
+# Move windows
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+# Resize windows
+alt-ctrl-h = 'resize smart -50'
+alt-ctrl-l = 'resize smart +50'
+
+# Switch between workspaces
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
+alt-9 = 'workspace 9'
+
+# Move windows to workspaces
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
+
+# Focus monitor (for multi-monitor setup)
+alt-tab = 'focus-monitor next'
+alt-shift-tab = 'focus-monitor prev'
+
+# Move window to next/prev monitor
+alt-shift-m = 'move-node-to-monitor next'
+alt-shift-n = 'move-node-to-monitor prev'
+
+# Layout commands
+alt-s = 'layout v_accordion' # Switch to vertical accordion layout
+alt-w = 'layout h_accordion' # Switch to horizontal accordion layout
+alt-e = 'layout tiles'        # Switch to tiling layout
+alt-f = 'layout floating'     # Switch to floating layout
+
+# Toggle fullscreen
+alt-shift-f = 'fullscreen'
+
+# Balance window sizes
+alt-shift-0 = 'balance-sizes'
+
+# Float/unfloat window
+alt-shift-space = 'layout floating tiling'
+
+# Reload config
+alt-shift-c = 'reload-config'
+
+# Service mode for window manipulation
+alt-shift-semicolon = 'mode service'
+
+# Service mode bindings (for less common operations)
+[mode.service.binding]
+esc = 'mode main'
+r = ['flatten-workspace-tree', 'mode main'] # Reset layout
+f = ['layout floating tiling', 'mode main'] # Toggle float
+backspace = ['close-all-windows-but-current', 'mode main']
+
+# App-specific rules (customize as needed)
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.systempreferences'
+run = 'layout floating'
+
+# Monitor-to-Workspace Assignment (for dual monitor setup)
+# This forces specific workspaces to specific monitors
+# Adjust 'main' and 'secondary' based on your monitor arrangement
+[workspace-to-monitor-force-assignment]
+# Main monitor (usually laptop or primary display)
+1 = 'main'  # Primary work
+2 = 'main'  # Secondary work  
+3 = 'main'  # Communication
+4 = 'main'  # Research
+5 = 'main'  # Misc
+6 = 'main'  # Extra main workspace
+
+# Secondary monitor (left side of keyboard - easier to reach)
+7 = 'secondary'  # Reference/Documentation
+8 = 'secondary'  # Monitoring/Logs/Testing
+9 = 'secondary'  # Music/Background
+
+# Note: With this setup:
+# - Workspaces 1-6 always appear on your main monitor
+# - Workspaces 7-9 always appear on your secondary monitor
+# - Matches keyboard layout (7-9 are on the left)
+
+# Assign specific apps to workspaces (optional)
+# [[on-window-detected]]
+# if.app-id = 'com.tinyspeck.slackmacgap'
+# run = 'move-node-to-workspace 3'
+
+# [[on-window-detected]]
+# if.app-id = 'com.spotify.client'
+# run = 'move-node-to-workspace 9'
