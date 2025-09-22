@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeyboardShortcuts_actionSubmit</key>
+	<string>{"carbonModifiers":0,"carbonKeyCode":36}</string>
+	<key>KeyboardShortcuts_cancelRecording</key>
+	<string>{"carbonKeyCode":53,"carbonModifiers":0}</string>
+	<key>KeyboardShortcuts_changeMode</key>
+	<string>{"carbonKeyCode":40,"carbonModifiers":2560}</string>
+	<key>KeyboardShortcuts_eighthMode</key>
+	<string>{"carbonKeyCode":28,"carbonModifiers":256}</string>
+	<key>KeyboardShortcuts_fifthMode</key>
+	<string>{"carbonKeyCode":23,"carbonModifiers":256}</string>
+	<key>KeyboardShortcuts_firstMode</key>
+	<string>{"carbonModifiers":256,"carbonKeyCode":18}</string>
+	<key>KeyboardShortcuts_fourthMode</key>
+	<string>{"carbonModifiers":256,"carbonKeyCode":21}</string>
+	<key>KeyboardShortcuts_navigateDown</key>
+	<string>{"carbonModifiers":0,"carbonKeyCode":125}</string>
+	<key>KeyboardShortcuts_navigateUp</key>
+	<string>{"carbonModifiers":0,"carbonKeyCode":126}</string>
+	<key>KeyboardShortcuts_ninthMode</key>
+	<string>{"carbonKeyCode":25,"carbonModifiers":256}</string>
+	<key>KeyboardShortcuts_pushToTalk</key>
+	<string>{"carbonModifiers":2048,"carbonKeyCode":49}</string>
+	<key>KeyboardShortcuts_secondMode</key>
+	<string>{"carbonKeyCode":19,"carbonModifiers":256}</string>
+	<key>KeyboardShortcuts_seventhMode</key>
+	<string>{"carbonKeyCode":26,"carbonModifiers":256}</string>
+	<key>KeyboardShortcuts_sixthMode</key>
+	<string>{"carbonKeyCode":22,"carbonModifiers":256}</string>
+	<key>KeyboardShortcuts_thirdMode</key>
+	<string>{"carbonModifiers":256,"carbonKeyCode":20}</string>
+	<key>KeyboardShortcuts_toggleRecording</key>
+	<string>{"carbonModifiers":0,"carbonKeyCode":110}</string>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>1009</real>
+	<key>NSWindow Frame Download model</key>
+	<string>905 1029 350 257 0 0 2560 1415 </string>
+	<key>NSWindow Frame History</key>
+	<string>905 386 750 900 0 0 2560 1415 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>970 762 620 398 0 0 2560 1415 </string>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2025-09-21T23:36:41Z</date>
+	<key>SUSkippedVersion</key>
+	<string>2.2.4</string>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>1826325904</integer>
+	<key>activeModeKey</key>
+	<string>default</string>
+	<key>alwaysShowMiniRecorder</key>
+	<true/>
+	<key>autoSubmitAfterPaste</key>
+	<false/>
+	<key>closeRecordingViewEnabled</key>
+	<true/>
+	<key>completedOnboarding</key>
+	<true/>
+	<key>hasLaunchedBefore</key>
+	<true/>
+	<key>isMinimized</key>
+	<false/>
+	<key>launchOnLogin</key>
+	<true/>
+	<key>licenseValid</key>
+	<false/>
+	<key>pushToTalkEnabled</key>
+	<true/>
+	<key>recordingViewCoordinateX</key>
+	<integer>456</integer>
+	<key>recordingViewCoordinateY</key>
+	<integer>61</integer>
+	<key>recordingViewEnabled</key>
+	<false/>
+	<key>recordingViewIsMinimized</key>
+	<false/>
+	<key>restoreClipboardEnabled</key>
+	<true/>
+	<key>selectedDeviceID</key>
+	<string>BuiltInMicrophoneDevice</string>
+	<key>showAdvancedFeatures</key>
+	<true/>
+	<key>simulateKeypressesEnabled</key>
+	<false/>
+	<key>snapPointID</key>
+	<integer>0</integer>
+	<key>usedFreeSeconds</key>
+	<integer>921</integer>
+	<key>voiceModelActiveDelay</key>
+	<real>120</real>
+</dict>
+</plist>

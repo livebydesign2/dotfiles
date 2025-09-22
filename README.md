@@ -12,6 +12,7 @@ This repository contains configuration files and settings for various developmen
 .
 ├── aerospace/          # AeroSpace window manager configuration
 ├── claude/             # Claude AI assistant configuration
+├── superwhisper/       # Super Whisper voice transcription configuration
 ├── wezterm/            # WezTerm terminal emulator configuration
 └── README.md
 ```
@@ -32,6 +33,12 @@ Configuration files for Claude AI assistant tools.
 - **statusline.sh** - Custom bash script for Claude Code statusline display
 - **claude_desktop_config.json** - MCP (Model Context Protocol) server configurations
 - **CLAUDE.md.template** - Template for creating project-specific Claude guidance files
+
+### Super Whisper (`/superwhisper`)
+
+Configuration for [Super Whisper](https://superwhisper.com/) - AI-powered voice transcription for macOS.
+
+- **com.superduper.superwhisper.plist** - Application preferences and settings
 
 ### WezTerm (`/wezterm`)
 
@@ -74,6 +81,13 @@ cp ~/Developer/dotfiles/claude/claude_desktop_config.json ~/.config/claude/
 
 **Note**: The `claude_desktop_config.json` contains API keys that should be kept secure. Update these with your own keys.
 
+#### Super Whisper
+
+```bash
+# Restore Super Whisper preferences
+plutil -convert binary1 ~/Developer/dotfiles/superwhisper/com.superduper.superwhisper.plist -o ~/Library/Preferences/com.superduper.superwhisper.plist
+```
+
 #### WezTerm
 
 ```bash
@@ -111,6 +125,9 @@ cp ~/.claude/settings.json claude/
 cp ~/.claude/statusline.sh claude/
 cp ~/.config/claude/claude_desktop_config.json claude/
 
+# For Super Whisper
+plutil -convert xml1 ~/Library/Preferences/com.superduper.superwhisper.plist -o ~/Developer/dotfiles/superwhisper/com.superduper.superwhisper.plist
+
 # For WezTerm
 cp ~/.config/wezterm/wezterm.lua wezterm/
 
@@ -131,6 +148,7 @@ git push
 - [AeroSpace](https://github.com/nikitabobko/AeroSpace) (for window management)
 - [WezTerm](https://wezfurlong.org/wezterm/) (for terminal emulation)
 - [Claude](https://claude.ai) desktop app or Claude Code CLI
+- [Super Whisper](https://superwhisper.com/) (for voice transcription)
 
 ## Contributing
 
